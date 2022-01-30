@@ -134,7 +134,7 @@ class BlogController extends Controller
             \Session::flash('err_msg','データがありません。');
             return redirect(route('blogs'));
         }
-        
+
         try {
             // ブログを登録
             Blog::destroy($id);
@@ -142,7 +142,7 @@ class BlogController extends Controller
             abort(500);
         }
         
-        \Session::flash('err_msg','データがありません。');
+        \Session::flash('err_msg','削除しました。');
         return redirect(route('blogs'));
     }
 
