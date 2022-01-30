@@ -26,3 +26,10 @@ Route::post('/blog/store', 'BlogController@exeStore')->name
 //ブログ詳細画面表示
 Route::get('/blog/{id}', 'BlogController@showDetail')->name
 ('show');
+
+//ブログ編集画面表示
+Route::get('/blog/edit/{id}', 'BlogController@showEdit')->name
+('edit');
+
+Route::post('/blog/update', 'BlogController@exeUpdate')->name
+('update');

@@ -145,6 +145,9 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'title' => 'メールアドレス',
+        'content' => 'プログ内容',
+    ],
 
 ];
