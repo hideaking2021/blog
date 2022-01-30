@@ -38,4 +38,13 @@ class BlogController extends Controller
         return view('blog.detail',
         ['blog' => $blog]);
     }
+
+     /**
+     * プログ詳細を表示
+     * 
+     * @return view
+     */
+    public function showCreate() {
+        return view('blog.form');
+    }
 }
