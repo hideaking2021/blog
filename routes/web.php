@@ -14,3 +14,6 @@
 //ブログ一覧表示
 Route::get('/', 'BlogController@showList')->name
 ('blogs');
+//ブログ詳細画面表示
+Route::get('/blog/{id}', 'BlogController@showDetail')->name
+('show');
