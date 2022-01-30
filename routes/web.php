@@ -33,3 +33,7 @@ Route::get('/blog/edit/{id}', 'BlogController@showEdit')->name
 
 Route::post('/blog/update', 'BlogController@exeUpdate')->name
 ('update');
+
+// プログ削除
+Route::post('/blog/delete{id}', 'BlogController@exeDelete')->name
+('delete');
